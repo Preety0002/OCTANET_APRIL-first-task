@@ -1,0 +1,470 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+#page1{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+}
+nav{
+    width: 100%;
+    height: 10vh;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    margin-left: 2%;
+}
+nav i{
+    color: white;
+    margin-right: 2%;
+    font-size: x-large;
+}
+nav h2{
+    color: white;
+    position: relative;
+}
+nav h2:hover{
+    font-weight: bold;
+}
+
+nav h2::before{
+content: "";
+cursor: pointer;
+position: absolute;
+bottom: -10%;
+width: 0%;
+height: 10%;
+background-color:whitesmoke;
+transition: 0.5s;
+}
+nav h2:hover::before{
+    width: 100%;
+
+}
+.extra{
+    width: 20%;
+    height: 85vh;
+    background-color:rgba(255, 255, 255, 0.161);
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 50px;
+    z-index: 1;
+    color: white;
+
+    
+}
+.extra i{
+    margin-left: 90%;
+}
+.extra li{
+    list-style: none;
+    padding: 10px ;
+    text-decoration: underline;
+}
+
+
+
+
+.page1-content1{
+    width: 100%;
+    height: 90vh;
+    /* background-color: brown; */
+    display: flex;
+    /* justify-content: space-; */
+    align-items: center;
+}
+.page1-content1-left{
+    width: 40%;
+    height: 90vh;
+    /* background-color: rgb(67, 184, 210); */
+    text-align: center;
+    
+}
+.page1-content1-left h1{
+    font-size: 80px;
+    color: white;
+    margin-left: 5%;
+    font-weight: 100;
+    margin-top: 10%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.page1-content1-left p{
+    color: white;
+    margin-top: 35%;
+    margin-right: 20%;
+}
+.page1-content1-left i{
+    color: white;
+    margin-right:30 ;
+    margin-top:40% ;
+}
+.page1-content1-right{
+    width: 40%;
+    height: 90vh;
+    background-color: aquamarine;
+    background-image: url(https://thirdweb.studio/img/mockup-iphone.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#page2{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+#page2 nav{
+    width: 100%;
+    height: 10vh;
+    /* background-color: red; */
+    justify-content: space-around;
+    align-items: center;
+}
+#page2  nav h1 img:hover{
+    zoom: 1.1;
+    box-shadow:3px 3px 3px palevioletred ;
+    
+}
+.page2-content1{
+    width: 100%;
+    height: 80vh;
+    /* background-color: red; */
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.page2-content1-left{
+    width: 50%;
+    height: 80vh;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.page2-content1-left h1{
+    color: rgba(255, 255, 255, 0.881);
+    font-size: 6vh;
+    margin-left: 5%;
+}
+.page2-content1-left p{
+    color: rgba(255, 255, 255, 0.706);
+    margin-left: 5%;
+}
+.page2-content1-right{
+    width: 50%;
+    height: 80vh;
+    /* background-color: rgba(5, 23, 17, 0.741); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://thirdweb.studio/img/blur-colors.png);
+    background-position: end;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    
+}
+#page3{
+    width: 100%;
+    height: 100vh;
+    
+}
+#page3 h1{
+color: white;
+font-size: 20vh;
+font-weight: 100;
+margin-left: 3%;
+}
+.page3-content1{
+    width: 100%;
+    min-height: 80vh;
+    /* background-color: #7fffd4; */
+    /* padding-bottom: 10vw; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.page3-left{
+    width: 50%;
+   min-height:170vh;
+    /* background-color: brown; */
+    margin-left: 1%;
+    
+}
+.page3-left-one{
+    width: 640px;
+    height: 400px;
+    background-color: greenyellow;
+    background-image: url(https://thirdweb.studio/img/casestudy-01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+}
+
+.page3-left-one:hover{
+    opacity: 0.3;
+    cursor: pointer;
+  
+}
+.page3-left-two{
+    width: 640px;
+    height: 400px;
+    background-color: greenyellow;
+    background-image: url(https://thirdweb.studio/img/casestudy-03.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 3%;
+}
+.page3-left-two:hover{
+    opacity: 0.3;
+    cursor: pointer;
+}
+.page3-left-three{
+    width: 640px;
+    height: 300px;
+    background-color: greenyellow;
+    background-image: url(https://thirdweb.studio/img/casestudy-04-new.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 3%;
+}
+.page3-left-three:hover{
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.page3-right{
+    width: 50%;
+    min-height:170vh;
+    /* background-color: rgb(77, 42, 165); */
+}
+.page3-right-one{
+    width: 640px;
+    height:750px ;
+    background-color: rgb(62, 191, 48);
+    background-image: url(https://thirdweb.studio/img/casestudy-02-update.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.page3-right-one:hover{
+    opacity: 0.3;
+    cursor: pointer;
+}
+.page3-right-two{
+    width: 640px;
+    height: 365px;
+    margin-top: 3%;
+    background-color: blue;
+    background-image: url(https://thirdweb.studio/img/casestudy-05.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.page3-right-two:hover{
+    opacity: 0.3;
+    cursor: pointer;
+}
+#page4{
+    width: 100%;
+    height: 100vh;
+    
+}
+#page5{
+    width: 100%;
+    height: 100vh;
+    display: block;
+    margin: auto;
+}
+#page5 img{
+    
+    vertical-align: middle;
+}
+::after, ::before {
+    box-sizing: border-box;
+}
+img{
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.page6{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* background-color: aquamarine; */
+}
+.blur{
+    width:830px ;
+    height:600px ;
+    background-image: url(https://thirdweb.studio/img/blur-colors.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+   left: -500px;
+    top: 10px; 
+    position: absolute;
+}
+.page6-content1 h1{
+    font-size: 100px;
+    color: white;
+    margin-left: 5%;
+    font-weight: 100;
+}
+.page6-content2{
+    width: 100%;
+    height: 50%;
+    /* background-color: red; */
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.page6-content2-one{
+    width: 340px;
+    height: 340px;
+    /* background-color: aquamarine; */
+}
+.page6-content2-one li{
+    font-size: 30px;
+    margin-top: 15%;
+    color: white;
+}
+
+.page6-content2-two{
+    width: 340px;
+    height: 250px;
+    background-color: aquamarine;
+    background-image: url(https://thirdweb.studio/img/help01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 5%;
+    transition:transform 0.9s;
+    align-items: center;
+   
+}
+.page6-content2-two:hover{
+    transform: rotateY(180deg);
+    zoom: 1.1;
+      
+}
+
+.page6-content2-three{
+    width: 340px;
+    height: 340px;
+    /* background-color: aquamarine; */
+}
+.page6-content2-three h2{
+    margin-top: 5%;
+    font-size: 22px;
+    color: white;
+}
+.page6-content2-three li{
+    color: white;
+    margin-top: 5%;
+}
+.page7{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    /*display: flex;
+    justify-content: space-around;
+    align-items: center; */
+}
+.page7-content1{
+ width: 100%;
+ height:50%;
+ /* background-color: aquamarine; */
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.page7-content1-one{
+    width: 50%;
+    height: 100%;
+    /* background-color: blue; */
+}
+.page7-content1-one h1{
+    font-size: 50px;
+    font-weight: 100;
+    color: white;
+    margin-left: 5%;
+}
+.page7-content1-one p{
+    margin-top: 3%;
+    margin-left: 6%;
+    color: rgba(255, 255, 255, 0.667);
+    font-size: x-large;
+}
+.page7-content1-one h2{
+    margin-left: 5%;
+    color: white;
+    margin-top: 10%;
+    font-weight: 100;
+}
+.page7-content-one h2 i{
+    color: rgba(255, 255, 255, 0.476);
+}
+.page7-content1-two{
+    width: 50%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.page7-content2{
+    width: 200px;
+    height: 100%;
+    /* background-color: aquamarine; */
+}
+.page7-content2 h3{
+ font-size: 30px;
+ color: white;
+ text-decoration: underline;
+}
+.page7-content2 li{
+    list-style: none;
+    font-size: 20px;
+    margin-top: 4%;
+    color: white;
+}
+.page7-content3{
+    width: 200px;
+    height: 100%;
+    /* background-color: aquamarine; */
+}
+.page7-content3 h3{
+    font-size: 30px;
+    color: white;
+    text-decoration: underline;
+   }
+   .page7-content3 li{
+       list-style: none;
+       font-size: 20px;
+       margin-top: 4%;
+       color: white;
+   }
+   .blur2{
+    width:400px ;
+    height:500px ; 
+    position: relative;
+    
+   }
